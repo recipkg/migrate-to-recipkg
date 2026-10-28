@@ -1,6 +1,6 @@
 # migrate-to-recipkg
 
-Turn an existing software project into a Markdown-only Recipkg recipe with recursive dependencies, observable acceptance criteria, and a discoverable recipe repository.
+Initialize Recipkg for an existing project or migrate software into a Markdown-only recipe with recursive dependencies and observable acceptance criteria. An explicit request for only an empty `recipkg init` scaffold remains limited to that scaffold.
 
 Read [SKILL.md](SKILL.md) for the workflow and linked resources. This is the canonical standalone skill repository used by [Recipkg](https://github.com/recipkg/recipkg).
 
@@ -17,4 +17,4 @@ This repository is also a Markdown-only Recipkg skill recipe: validate with `rec
 
 ## 中文
 
-本仓库只维护 `migrate-to-recipkg` 技能。不同项目应把此同一仓库作为固定提交的 Git 子模块引用，不复制技能正文。修改先回本仓库，再更新项目指针；注意保护本地改动。技能入口与说明见 [SKILL.md](SKILL.md)。
+本技能用于在现有项目中初始化、接入 Recipkg，或将软件迁移为配方；明确只要求创建空配方骨架时按该范围执行。本仓库只维护 `migrate-to-recipkg` 技能。不同项目应把此同一仓库作为固定提交的 Git 子模块引用，不复制技能正文。修改先回本仓库，再更新项目指针；注意保护本地改动。技能入口与说明见 [SKILL.md](SKILL.md)。

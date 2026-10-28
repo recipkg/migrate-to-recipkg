@@ -1,11 +1,13 @@
 ---
 name: migrate-to-recipkg
-description: Turn an existing software project into a Recipkg package of Markdown reconstruction instructions, recursive dependency recipes, and observable acceptance criteria.
+description: 在现有项目中初始化 Recipkg，或将软件迁移为包含递归依赖和可观察验收条件的 Markdown 配方。用户要求初始化、接入 Recipkg 或迁移现有项目时使用。
 ---
 
 # 将现有软件迁移到 Recipkg
 
 [English](SKILL.md)
+
+用户要求“在项目中初始化 Recipkg”或“给这个项目接入 Recipkg”时，使用本技能对当前项目执行迁移流程。如果用户明确只要求用 `recipkg init` 创建空配方骨架，遵守这个较窄的范围。
 
 ## 输入
 

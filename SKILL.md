@@ -1,6 +1,6 @@
 ---
 name: migrate-to-recipkg
-description: Turn an existing software project into a Markdown-only Recipkg recipe with recursive dependencies, observable acceptance criteria, and a discoverable recipe repository.
+description: Initialize Recipkg for an existing project or migrate software into a Markdown-only Recipkg recipe with recursive dependencies and observable acceptance criteria. Use when asked to initialize or set up Recipkg in a project, or migrate an existing software project to Recipkg.
 ---
 
 # Migrate software to Recipkg
@@ -8,6 +8,8 @@ description: Turn an existing software project into a Markdown-only Recipkg reci
 [简体中文](SKILL.zh-CN.md)
 
 ## Inputs and boundaries
+
+Treat requests such as "initialize Recipkg for this project" or "在项目中初始化 Recipkg" as requests to apply this migration workflow to the current project. Respect a narrower explicit request to create only an empty recipe scaffold with `recipkg init`.
 
 Use the software directory, Git repository, or observable product; behavior to preserve; target environments; and a recipe output location. A recipe preserves requirements, interfaces, dependencies, and acceptance conditions for a future rebuild. Keep implementation source, binaries, generated output, and installation scripts out of its payload. Writing a recipe is not rebuilding software.
 
