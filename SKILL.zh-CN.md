@@ -57,4 +57,8 @@ GitHub 上发布 Recipkg 配方的仓库必须添加 `recipkg` topic，并保留
 
 ## 复用项目技能子模块
 
-阅读 [PROJECT_SKILLS.md](PROJECT_SKILLS.md)。迁移后的项目必须把清单中的相同 GitHub 仓库作为固定提交的技能子模块，默认路径为 `.agents/skills/<skill-name>/`。已有正确仓库则沿用其 agent 目录，不复制技能正文、不创建项目专用副本或 fork，也不为安装技能而加入整个 Recipkg 仓库。每个缺失技能分别从自己的仓库添加，核对 `.gitmodules`、`160000` gitlink、remote、提交、dirty 状态及技能材料。修改先回各技能上游，再审查并显式更新消费者指针。已有普通技能目录先核对来源和改动，保护自定义内容，不直接覆盖。
+阅读 [PROJECT_SKILLS.md](PROJECT_SKILLS.md)。复用清单中的上游技能仓库作为固定提交的 Git 子模块，默认路径为 `.agents/skills/<skill-name>/`。已有正确仓库则沿用其 agent 目录；每个缺失的上游技能分别从自己的仓库添加，不要加入整个 Recipkg 仓库。
+
+这项要求只涉及清单中的上游技能。不要为满足要求而新建或发布迁移项目专属技能、技能仓库或 fork；保留目标项目已有的自定义技能文件，不替换、不删除。用户若另行要求新增项目自有技能，再作为独立需求处理。
+
+核对 `.gitmodules`、`160000` gitlink、远端 URL、固定提交、clean/dirty 状态及技能材料。更新技能先在其上游仓库完成，再审查并显式更新各消费者的提交指针。替换已有普通技能目录前检查来源和本地改动，保护用户内容。Git 子模块用于编辑上游技能；Markdown 配方归档不得包含其 Git 元数据。若配方需要分发技能，只纳入 UTF-8 Markdown 正文并记录固定来源提交。

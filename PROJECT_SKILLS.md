@@ -2,6 +2,8 @@
 
 Every skill has one canonical repository. Migrated projects reference these same repositories as fixed-commit Git submodules, rather than copying Markdown or creating project-specific skill repositories. Reuse existing correct checkouts when an agent uses a different skill directory.
 
+This catalog applies only to the shared upstream skills listed below. It does not authorize creating project-owned skills, repositories, or forks. Preserve a migrated project's existing custom skill files unchanged.
+
 | Skill | Canonical GitHub repository | Default project path |
 | --- | --- | --- |
 | `add-dependency` | [recipkg/add-dependency](https://github.com/recipkg/add-dependency) | `.agents/skills/add-dependency/` |
@@ -32,3 +34,5 @@ Repeat the add operation for missing skills using each row's exact repository UR
 Skills are scoped working instructions, not implicit permission to publish or contact others. Their Git workspaces and `.git` metadata never enter a Markdown-only recipe archive. CLI skill synchronization remains a managed-copy option for non-Git environments; it does not create these project submodules.
 
 每个技能只维护一个独立仓库。迁移项目应添加上述相同仓库为子模块，默认全部放到 `.agents/skills/`，已有正确路径则沿用。不要逐项目复制技能内容或创建带项目后缀的副本。更新时先保留本地修改、审查并选择提交，再显式提交父仓库指针；不要 reset 或强制覆盖。
+
+此清单只适用于上游共享技能，不要求为迁移目标新建项目自有技能、技能仓库或 fork。保留目标项目现有的自定义技能文件，不覆盖、不删除。
