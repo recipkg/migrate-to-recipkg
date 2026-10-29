@@ -5,9 +5,9 @@ format = "recipkg/1"
 
 [package]
 name = "migrate-to-recipkg"
-version = "0.1.3"
+version = "0.2.0"
 kind = "skill"
-description = "Initialize Recipkg for an existing project or migrate software into a Markdown-only recipe with recursive dependencies and observable acceptance criteria."
+description = "Initialize Recipkg for an existing project or migrate software into a Markdown-only recipe with reviewed standard-library dependencies and observable acceptance criteria."
 entry = "SKILL.md"
 ```
 
